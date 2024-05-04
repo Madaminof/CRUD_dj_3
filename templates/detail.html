@@ -1,0 +1,17 @@
+<title>Detail</title>
+
+
+
+<body>
+<img src="{{ product.image.url }}"/><br>
+Actior_name:{{ product.actior_name }}<br>
+year:{{ product.yera }}<br>
+Gender:{{ product.gender }}
+       <hr/>
+
+<a href="{% url 'products:get_info'%}" >home</a><br>
+<a href="{% url 'products:update' product.pk %}" >Update</a><br>
+<a href="{% url 'products:delete_product' product.pk %}" >Delete</a><br>
+
+
+</body>

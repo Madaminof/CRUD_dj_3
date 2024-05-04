@@ -1,0 +1,11 @@
+<title>Products</title>
+
+<h1>Serial Actiorlari</h1><br>
+
+
+<body>
+{% for product in products %}
+    <a href="{% url 'products:detail' product.pk %}" >{{ product.actior_name }}</a><hr>
+{% endfor %}
+
+</body>
